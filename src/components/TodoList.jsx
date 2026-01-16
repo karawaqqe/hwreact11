@@ -4,7 +4,10 @@ function TodoList({ todos, onDelete, onToggle }) {
   return (
     <ul className="todo-list">
       {todos.map((todo) => (
-        <li key={todo.id} className={todo.completed ? "done" : ""}>
+        <li
+          key={todo.id}
+          className={todo.completed ? "done" : ""}
+        >
           <label>
             <input
               type="checkbox"
@@ -13,7 +16,9 @@ function TodoList({ todos, onDelete, onToggle }) {
             />
             {todo.text}
           </label>
-          <button onClick={() => onDelete(todo.id)}>Видалити</button>
+          <button onClick={() => onDelete(todo.id)}>
+            Видалити
+          </button>
         </li>
       ))}
     </ul>

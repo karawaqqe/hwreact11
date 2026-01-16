@@ -12,6 +12,7 @@ class TodoEditor extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.textValue.trim() === "") return;
+
     this.props.onAdd(this.state.textValue);
     this.setState({ textValue: "" });
   };

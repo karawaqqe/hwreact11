@@ -6,7 +6,7 @@ function Filter({ value, onChange }) {
       type="text"
       value={value}
       onChange={onChange}
-      placeholder="Фільтр завдань..."
+      placeholder="Фільтр..."
       className="filter"
     />
   );
